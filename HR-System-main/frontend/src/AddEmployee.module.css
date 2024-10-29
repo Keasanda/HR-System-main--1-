@@ -1,0 +1,178 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.parentContainer {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100%;
+    background-color: #EFEBEB;
+    position: relative; /* Allows positioning of child elements if needed */
+    overflow: auto; /* Allows scrolling for content inside the container */
+}
+
+.leftSide {
+    width: 20%;
+    background-color: #363673;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    margin-left: 20px;
+    padding: 20px;
+    width: 75%;
+    margin-top: 40px;
+    background-color: #D9D9D9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    min-height: 90px; /* Optional: set a minimum height */
+    height: 780px; /* Allows the height to adjust based on content */
+}
+
+.label {
+    font-size: 14px;
+    color: #363673;
+    margin-bottom: 5px; /* Adds space between label and input */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.formRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFC0CB;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.longinputField {
+    width: 1080px;
+    padding: 10px;
+    border: 1px solid #FFC0CB;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Adjust width to fit two inputs side by side */
+}
+
+/* Address fields in their own rows */
+.address-row {
+    display: flex;
+    flex-direction: column;
+}
+
+.uploadButton {
+    background: linear-gradient(135deg, #6D83F2, #2B4F63);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 15px; /* Adjusts spacing */
+    width: 155px;
+    margin-top: 40px;
+    margin-left: 1300px;
+}
+
+.uploadButton:hover {
+    background-color: #2c2c64;
+}
+
+.imageContainer {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.uploadedImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.uploadContainer {
+    display: inline-block;
+    position: relative;
+}
+
+.customFileUpload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 100px;
+    background: linear-gradient(135deg, #6D83F2, #2B4F63); /* Gradient background */
+    color: white;
+    border-radius: 8px; /* Slightly more rounded corners */
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    gap: 10px; /* Space between icon and text */
+    margin-left: 550px;
+    margin-top: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds a soft shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.customFileUpload:hover {
+    transform: translateY(-2px); /* Slight "lift" effect on hover */
+    background: linear-gradient(135deg, #4E60A6, #6D83F2); /* Change gradient on hover */
+}
+
+.fileInput {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+.customFileUpload i {
+    font-size: 24px; /* Adjust icon size */
+}
+
+.customFileUpload span {
+    font-weight: bold; /* Make text bold */
+}
+
+.successMessage {
+    color: green; /* Or any color you prefer */
+    margin-top: 10px;
+    font-weight: bold;
+  }
+
+  .errorMessage {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -10px; /* Adjust margin as needed */
+    margin-bottom: 10px; /* Space between error and input */
+  }

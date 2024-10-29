@@ -1,0 +1,120 @@
+/* Main container for the employee details page */
+.container {
+	display: flex;
+	height: 100vh;
+	background-color: #F4F4F4;
+}
+
+/* Sidebar on the left */
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar li {
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.sidebar li:hover {
+	text-decoration: underline;
+}
+
+/* Content section on the right */
+.content {
+	width: 80%; /* Set width to allow for margin on the left */
+	padding: 20px;
+	background-color: #EFEBEB; /* Changed background color here */
+	margin-left: 20%; /* Move content to the right by 20% */
+}
+
+/* Profile header containing the profile picture and basic info */
+.profileHeader {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 2px solid #ddd;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+
+.profileInfo {
+	display: flex;
+	align-items: center;
+}
+
+.profilePicture img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+h2 {
+	margin: 0;
+}
+
+.tabs {
+	display: flex;
+	gap: 10px;
+}
+
+.tabs button {
+	padding: 10px 15px;
+	background-color: #F5F5F5;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.tabs button:hover {
+	background-color: #E0E0E0;
+}
+
+/* Section for displaying details */
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.section {
+	background-color: #F9F9F9;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+	margin-bottom: 15px;
+}
+
+p {
+	margin: 5px 0;
+}
+
+p strong {
+	color: #333;
+}
+
+.row {
+	display: flex;
+	gap: 20px; /* Space between fields */
+	flex-wrap: wrap;
+  }
+
+  
+  .inputGroup {
+	flex: 1;
+	min-width: 200px; /* Adjust the minimum width to fit your design */
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #FFC0CB;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}

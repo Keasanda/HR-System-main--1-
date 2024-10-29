@@ -1,0 +1,59 @@
+.navbar {
+	width: 80%;               /* Set the width to 70% */
+	height: 50px;             /* Set the height to 50px */
+	position: fixed;          /* Fix the navbar to the top */
+	top: 0;                   /* Position it at the top */
+	left: 45%;                /* Center it horizontally */
+	transform: translateX(-50%); /* Centering adjustment */
+	background-color: #fff;  /* Optional: background color */
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: shadow for depth */
+	display: flex;           /* Use flexbox for layout */
+	align-items: center;      /* Center items vertically */
+	z-index: 1000;           /* Ensure it sits on top of other content */
+	margin-left: 287px;
+  }
+  
+  .navContent {
+	display: flex;            /* Flexbox for contents */
+	justify-content: space-between; /* Space between logo and user info */
+	width: 100%;             /* Full width of the navbar */
+  }
+  
+  .userInfo {
+	display: flex;           /* Flexbox for user info */
+	align-items: center;     /* Center items vertically */
+  }
+  
+  
+  .icon {
+    font-size: 1.5rem;
+    margin-left: 15px;             /* Increase the icon size (adjust as needed) */
+    margin-right: 5px;               /* Remove any margin to eliminate space */
+    color: #333;                   /* Change color if needed */
+}
+.homeLink {
+    display: flex;                 /* Use flexbox for the home link */
+    align-items: center;           /* Center items vertically */
+    margin-right: -800px;           /* Space between home link and search container */
+}
+
+.searchContainer {
+    display: flex;                 /* Use flexbox for layout */
+    align-items: center;           /* Center items vertically */
+    margin-right: 20px;           /* Space between search container and user info */
+}
+
+.searchInput {
+    border: 1px solid #ccc;       /* Border for the input */
+    padding: 5px;                 /* Padding for the input */
+    margin-right: 5px;            /* Space between input and icon */
+}
+
+.searchIcon {
+    color: #333;                  /* Icon color */
+}
+.userPlaceholder {
+	color: #333;             /* Text color for user info */
+	margin-right: 20px;
+
+  }

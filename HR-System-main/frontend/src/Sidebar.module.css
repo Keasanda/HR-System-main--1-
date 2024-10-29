@@ -1,0 +1,100 @@
+.sidebar {
+	height: 100%;
+	width: 20%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #2B4F63;
+	padding-top: 20px;
+	
+  }
+  
+  .menu {
+	list-style-type: none;
+	padding: 0;
+	margin-left: 3rem; /* Move the menu 3rem to the left */
+	margin-top: 10rem;  /* Move the menu 3rem to the top */
+  }
+  
+  .menu li {
+	margin: 1rem 0;
+  }
+  
+  .menu a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+  }
+  
+  .menu li a:hover {
+	background-color: #34495e;
+	padding-left: 20px;
+	transition: 0.3s;
+  }
+
+  .label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.boldText {
+    font-weight: bold;
+    margin-left: 30px; /* Adjust this value as needed */
+	color: white;
+}
+
+.logo {
+    position: absolute; /* Position the logo absolutely within the leftSide container */
+    top: 3rem; /* Distance from the top edge */
+    left: 3rem; /* Distance from the left edge */
+    display: flex;
+    align-items: center;
+}
+
+.logoSquare {
+    width: 90px;
+    height: 90px;
+    background-color: #FFC0CB;
+    margin-right: 10px;
+    position: relative;
+}
+
+.logoSquare::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #d8d8d8;
+    left: 60px;
+    top: 30px;
+}
+
+.logoSquare::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    left: 90px;
+    top: 30px;
+}
+
+.logout {
+	margin-top: auto; /* Push the logout button to the bottom */
+	padding: 1rem;
+	margin-top: 30rem;
+	
+  }
+  
+  .logout a {
+	color: white;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+  }
+  
+  .logoutIcon {
+	margin-right: 10px;
+  margin-left: 30px;
+  }

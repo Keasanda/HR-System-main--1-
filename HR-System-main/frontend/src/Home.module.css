@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #EFEBEB;
+  margin-left: 20%;
+}
+
+.leftSide {
+  width: 30px; /* Adjust width as needed */
+}
+
+.rightSide {
+ margin-top: 60px;
+}
+
+.employeeCardContainer {
+  display: flex; /* Use Flexbox for the card layout */
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: space-between; /* Space out the cards */
+  gap: 30px; /* Space between cards */
+  margin: 0 -15px; /* Adjust for Bootstrap padding */
+}
+
+.employeeCol {
+  flex: 1 1 200px; /* Allow the columns to flex */
+  display: flex; /* Ensure the column itself uses flex */
+  justify-content: center; /* Center the card in the column */
+}
+
+.employeeCard {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px; /* Space between rows */
+  width: 200px; /* Fixed width for consistency */
+  height: 250px; /* Fixed height for consistency */
+  display: flex; /* Make card a flex container */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.employeeImage {
+  width: 100px; /* Set width to 95 pixels */
+  height: 150px; /* Set height to 95 pixels */
+  object-fit: cover; /* Ensure the image covers the box without distortion */
+  border-radius: 50%; /* Rounded images */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+.employeeInfo {
+  padding: 10px; /* Space inside the card */
+  flex-grow: 1; /* Allow info to expand to fill remaining space */
+  display: flex; /* Make it a flex container */
+  flex-direction: column; /* Stack info elements */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center the text */
+}
+
+.employeeInfo h2 {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.employeeInfo p {
+  margin: 5px 0; /* Space between paragraphs */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
